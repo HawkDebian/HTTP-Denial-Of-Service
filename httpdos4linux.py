@@ -21,7 +21,7 @@ print('''
 ''')
 
 target = input("Enter the IP of the Target: ")
-thr = input("Tim (seconds): ")
+thr = input("Time (seconds): ")
 port = 80
 
 def attack():
